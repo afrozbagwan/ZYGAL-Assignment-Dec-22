@@ -1,0 +1,84 @@
+<button onclick="Clockwise()">Clockwise</button>
+<button onclick="AntiClockwise()">Anti-Clockwise</button>
+
+<script>
+
+  function Clockwise() 
+{
+     document.getElementById("block1").style.color = "yellow";
+     document.getElementById("block2").style.color = "green";
+     document.getElementById("block3").style.color = "orange";
+     document.getElementById("block4").style.color = "red";
+}
+
+  function AntiClockwise()
+ {
+     document.getElementById("block1").style.color = "orange";
+     document.getElementById("block2").style.color = "green";
+     document.getElementById("block3").style.color = "yellow";
+     document.getElementById("block4").style.color = "red";
+} 
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html>  
+  
+     <head>  
+            
+          <script language="javascript">  
+               function ChangeColor()  
+               {  
+                    document.getElementById('btn1').style.backgroundColor='Red';  
+                    setTimeout("ChangeColor2()",2000);  
+               }  
+               function ChangeColor2()  
+               {  
+                    document.getElementById('btn1').style.backgroundColor='Pink';  
+                    setTimeout("ChangeColor3()",2000);  
+               }  
+               function ChangeColor3()  
+               {  
+                    document.getElementById('btn1').style.backgroundColor='Green';  
+                    setTimeout("ChangeColor4()",2000);  
+               }  
+               function ChangeColor4()  
+               {  
+                    document.getElementById('btn1').style.backgroundColor='Red';  
+               }  
+          </script>  
+     </head>  
+  
+     <body>  
+          <input type="button" onclick="ChangeColor()" value="Clockwise" id="btn1" />  
+	  <input type="button" onclick="ChangeColor()" value="Anti-Clockwise" id="btn2" />  
+
+
+     </body>  
+  
+</html> 
